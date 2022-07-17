@@ -916,7 +916,7 @@ func (f *File) drawCharSeriesBubbleSize(v formatChartSeries, formatSet *formatCh
 	}
 	return &cVal{
 		NumRef: &cNumRef{
-			F: v.Values,
+			F: formatSet.BubbleSize,
 		},
 	}
 }

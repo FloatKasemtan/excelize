@@ -563,6 +563,7 @@ type formatChart struct {
 	VaryColors bool                 `json:"vary_colors"`
 	XAxis      formatChartAxis      `json:"x_axis"`
 	YAxis      formatChartAxis      `json:"y_axis"`
+	BubbleSize string               `json:"bubble_size"`
 	Chartarea  struct {
 		Border struct {
 			None bool `json:"none"`
@@ -619,6 +620,7 @@ type formatChartSeries struct {
 	Name       string `json:"name"`
 	Categories string `json:"categories"`
 	Values     string `json:"values"`
+	Size       string `json:"size"`
 	Line       struct {
 		None  bool    `json:"none"`
 		Color string  `json:"color"`
