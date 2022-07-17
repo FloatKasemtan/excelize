@@ -910,13 +910,14 @@ func (f *File) drawChartSeriesYVal(v formatChartSeries, formatSet *formatChart) 
 
 // drawCharSeriesBubbleSize provides a function to draw the c:bubbleSize
 // element by given chart series and format sets.
+
 func (f *File) drawCharSeriesBubbleSize(v formatChartSeries, formatSet *formatChart) *cVal {
 	if _, ok := map[string]bool{Bubble: true, Bubble3D: true}[formatSet.Type]; !ok {
 		return nil
 	}
 	return &cVal{
 		NumRef: &cNumRef{
-			F: formatSet.BubbleSize,
+			F: formatSet.BubbleSize, // Fix Size
 		},
 	}
 }
