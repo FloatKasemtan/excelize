@@ -917,7 +917,7 @@ func (f *File) drawCharSeriesBubbleSize(v formatChartSeries, formatSet *formatCh
 	}
 	return &cVal{
 		NumRef: &cNumRef{
-			F: formatSet.BubbleSize, // Fix Size
+			F: formatSet.BubbleSize, // Fix Size change just for tag
 		},
 	}
 }
