@@ -892,7 +892,7 @@ func (f *File) drawChartSeriesXVal(v formatChartSeries, formatSet *formatChart) 
 			F: v.Categories,
 		},
 	}
-	chartSeriesXVal := map[string]*cVal{Scatter: cat}
+	chartSeriesXVal := map[string]*cVal{Scatter: cat, Bubble: cat, Bubble3D: cat}
 	return chartSeriesXVal[formatSet.Type]
 }
 
