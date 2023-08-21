@@ -886,13 +886,13 @@ func (f *File) drawChartSeriesMarker(i int, formatSet *formatChart) *cMarker {
 
 // drawChartSeriesXVal provides a function to draw the c:xVal element by given
 // chart series and format sets.
-func (f *File) drawChartSeriesXVal(v formatChartSeries, formatSet *formatChart) *cCat {
-	cat := &cCat{
-		StrRef: &cStrRef{
+func (f *File) drawChartSeriesXVal(v formatChartSeries, formatSet *formatChart) *cVal {
+	cat := &cVal{
+		NumRef: &cNumRef{
 			F: v.Categories,
 		},
 	}
-	chartSeriesXVal := map[string]*cCat{Scatter: cat}
+	chartSeriesXVal := map[string]*cVal{Scatter: cat}
 	return chartSeriesXVal[formatSet.Type]
 }
 

@@ -403,7 +403,7 @@ type cSer struct {
 	InvertIfNegative *attrValBool `xml:"invertIfNegative"`
 	Cat              *cCat        `xml:"cat"`
 	Val              *cVal        `xml:"val"`
-	XVal             *cCat        `xml:"xVal"`
+	XVal             *cVal        `xml:"xVal"`
 	YVal             *cVal        `xml:"yVal"`
 	Smooth           *attrValBool `xml:"smooth"`
 	BubbleSize       *cVal        `xml:"bubbleSize"`
@@ -620,7 +620,7 @@ type formatChartSeries struct {
 	Name       string `json:"name"`
 	Categories string `json:"categories"`
 	Values     string `json:"values"`
-	Sizes       string `json:"sizes"`
+	Sizes      string `json:"sizes"`
 	Line       struct {
 		None  bool    `json:"none"`
 		Color string  `json:"color"`
