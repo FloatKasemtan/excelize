@@ -620,7 +620,7 @@ type formatChartSeries struct {
 	Name       string `json:"name"`
 	Categories string `json:"categories"`
 	Values     string `json:"values"`
-	Size       string `json:"size"`
+	Sizes       string `json:"sizes"`
 	Line       struct {
 		None  bool    `json:"none"`
 		Color string  `json:"color"`
